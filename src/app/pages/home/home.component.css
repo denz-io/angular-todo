@@ -1,0 +1,16 @@
+.dashboard {
+  display: flex;
+  margin: auto;
+  width: max-content; 
+  align-items: center;
+  margin-top: 20vh;
+}
+
+.dashboard > img {
+  width: 200px !important;
+  margin-right: 40px;
+}
+
+.dashboard > h1 {
+  font-size: 70px;
+}

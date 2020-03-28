@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 import { Globals } from '../../globals';
 
 @Component({
@@ -7,5 +8,14 @@ import { Globals } from '../../globals';
   styleUrls: ['./navigation.component.css'],
 })
 export class NavigationComponent {
-  constructor(public globals: Globals) {}
+  globals: Globals;
+
+  constructor(globals: Globals, private router: Router) {
+    this.globals = globals;
+  }
+
+  logOut() {
+    this.globals.onAuth()
+    this.router.navigateByUrl('/login');
+  }
 }

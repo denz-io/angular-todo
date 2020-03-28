@@ -16,6 +16,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
+  declarations: [HomePage, DashboardPage, LoginPage, InvalidRoutePage],
   imports: [BrowserModule, CommonModule, RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })

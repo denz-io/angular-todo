@@ -2,5 +2,5 @@
   background: #f58ea4;
   max-width: 1200px;
   margin: auto;
-  height: 100vh;
+  min-height: 100vh;
 }

@@ -1,0 +1,60 @@
+.dashboard-container {
+  padding: 40px;
+  color: white;
+  text-align: center;
+  height: auto; 
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  width: min-content;
+  white-space: nowrap;
+  margin: auto;
+}
+
+.dashboard-header *:not(:last-child)  {
+  margin-right: 20px;
+}
+
+
+.dashboard-header button {
+  background: green;
+  color: #FFFFFF;
+  border: none;
+  font-size: 30px;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.dashboard-container textarea {
+  width: 400px;
+  height: 100px;
+  padding: 30px;
+}
+
+.reminder {
+  background: #403B84; 
+  padding: 20px;    
+  height: 100px;
+  width: 600px;
+  margin: auto;
+  margin-top: 10px; 
+  margin-bottom: 10px; 
+  text-align: left;
+  border: 4px solid #FFFFFF;
+  border-radius: 6px;
+}
+
+.delete-button {
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 69%;
+  color: white;
+  padding: 2px 9px 4px 9px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}

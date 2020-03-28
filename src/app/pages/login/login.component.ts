@@ -11,7 +11,7 @@ export class LoginPage {
   globals: Globals;
   username = '';
   password = '';
-  error = false;
+  error = { username: false, password: false };
 
   constructor(globals: Globals, private router: Router) {
     this.globals = globals;
@@ -21,11 +21,16 @@ export class LoginPage {
     this[event.target.name] = event.target.value;
   }
 
-  submitForm() {
+  submitForm(event) {
+    event.preventDefault();
     if (this.username && this.password) {
       this.globals.onAuth();
       this.router.navigateByUrl('/dashboard');
     } else {
+      this.error = {
+        username: !this.username && true,  
+        password: !this.password && true,  
+      }
     }
   }
 }

@@ -1,4 +1,17 @@
-<div>
-  This is the dashboard
-  <div></div>
+<div class="dashboard-container">
+  <div class="dashboard-header">
+     <h1>Add Reminders</h1>
+     <button (click)="addReminder()">
+       +
+     </button>
+  </div>
+  <textarea (keyup)="onKey($event)" value="{{input}}"></textarea>
+  <div class="reminder" *ngFor="let reminder of reminders; index as i;">
+    <div>
+      <button class="delete-button" (click)="deleteReminder(i)" >
+        x 
+      </button>
+    </div>
+    {{ reminder }}
+  </div>
 </div>

@@ -1,25 +1,25 @@
-<div class="login-form">
+<form class="login-form">
   <div>
     <label>
       Username:
     </label>
-    <input name="username" (keyup)="onKey($event)" value="{{ username }}" />
-    <div class="error">
-      <span *ngIf="error">This item is required.</span>
+    <input [ngClass]="{'error-input': error.password}" name="username" (keyup)="onKey($event)" value="{{ username }}" />
+    <div *ngIf="error.username" class="error">
+      <span>This item is required.</span>
     </div>
   </div>
   <div>
     <label>
       Password:
     </label>
-    <input name="password" (keyup)="onKey($event)" value="{{ password }}" />
-    <div class="error">
-      <a>This item is required.</a>
+    <input [ngClass]="{'error-input': error.password}" name="password" (keyup)="onKey($event)" value="{{ password }}" />
+    <div *ngIf="error.password" class="error">
+      <span>This item is required.</span>
     </div>
   </div>
   <div>
-    <button (click)="submitForm()">
+    <button (click)="submitForm($event)">
       Login
     </button>
   </div>
-</div>
+</form>

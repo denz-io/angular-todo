@@ -29,6 +29,12 @@
 
 .login-form div input {
   margin: 10px 0;
+  min-height: 40px;
+}
+
+.error-input {
+  border: 1px solid red;
+  padding: 0px 10px;
 }
 
 .login-form .error {
