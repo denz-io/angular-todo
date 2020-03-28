@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Globals }  from '../../globals'
+import { Globals } from '../../globals';
 
 @Component({
   selector: 'navigation',

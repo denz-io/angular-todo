@@ -8,17 +8,9 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { AppComponent } from './app.component';
 
 @NgModule({
-  declarations: [
-    NavigationComponent,
-    AppComponent,
-  ],
-  imports: [
-    BrowserModule,
-    CommonModule,
-    AppRoutingModule
-  ],
+  declarations: [NavigationComponent, AppComponent],
+  imports: [BrowserModule, CommonModule, AppRoutingModule],
   providers: [Globals],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-
-export class AppModule { }
+export class AppModule {}

@@ -3,18 +3,18 @@
     <label>
       Username:
     </label>
-    <input name="username" (keyup)="onKey($event)" value="{{username}}">
+    <input name="username" (keyup)="onKey($event)" value="{{ username }}" />
     <div class="error">
-        <span *ngIf="error">This item is required.</span>
+      <span *ngIf="error">This item is required.</span>
     </div>
   </div>
   <div>
     <label>
       Password:
     </label>
-    <input name="password" (keyup)="onKey($event)" value="{{password}}">
+    <input name="password" (keyup)="onKey($event)" value="{{ password }}" />
     <div class="error">
-        <a>This item is required.</a>
+      <a>This item is required.</a>
     </div>
   </div>
   <div>

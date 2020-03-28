@@ -16,11 +16,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    CommonModule,
-    RouterModule.forRoot(routes),
-  ],
-  exports: [RouterModule]
+  imports: [BrowserModule, CommonModule, RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
