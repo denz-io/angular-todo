@@ -1,0 +1,18 @@
+<nav class="main-navigation">
+  <ul class="nav-left">
+    <li>
+      <a routerLink="/">HOME</a>
+    </li> 
+    <li>
+      <a routerLink="/dashboard">DASHBOARD</a>
+    </li> 
+  </ul>
+  <ul class="nav-right">
+    <li *ngIf="!globals.auth">
+      <a routerLink="/login">LOGIN</a>
+    </li> 
+    <li *ngIf="globals.auth">
+      <a (click)="globals.onAuth()">LOGOUT</a>
+    </li> 
+  </ul>
+</nav>

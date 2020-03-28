@@ -1,0 +1,26 @@
+.main-navigation {
+    padding: 20px 40px;
+    display: flex;
+    background: #FF476D;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.main-navigation .nav-right {
+    margin-left: auto;
+}
+
+.main-navigation ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    cursor: pointer;
+}
+
+.main-navigation ul li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.main-navigation ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
