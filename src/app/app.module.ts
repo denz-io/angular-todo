@@ -7,8 +7,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { AppComponent } from './app.component';
 
+const Components = [ NavigationComponent ];
+
 @NgModule({
-  declarations: [NavigationComponent, AppComponent],
+  declarations: [ ...Components, AppComponent],
   imports: [BrowserModule, CommonModule, AppRoutingModule],
   providers: [Globals],
   bootstrap: [AppComponent],

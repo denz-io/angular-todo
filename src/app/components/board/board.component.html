@@ -1,0 +1,18 @@
+<div class="board-main-container">
+    <div 
+      class="board-column"
+      (dragover)="onDragOver($event)" 
+      *ngFor="let column of boardColumns"
+      id={{column.id}}
+    >
+        <div 
+          class="board-column-item" 
+          draggable="true" 
+          (dragend)="onDragEnd($event, item)"
+          *ngFor="let item of column.items"
+          id={{item.id}}
+       >
+           {{item.value}} 
+        </div>
+    </div>
+</div>

@@ -7,6 +7,7 @@ import { DashboardPage } from './pages/dashboard/dashboard.component';
 import { HomePage } from './pages/home/home.component';
 import { InvalidRoutePage } from './pages/invalid-route/invalid-route.component';
 import { LoginPage } from './pages/login/login.component';
+import { BoardComponent } from './components/board/board.component';
 
 const routes: Routes = [
   { path: '', component: HomePage, pathMatch: 'full' },
@@ -15,8 +16,12 @@ const routes: Routes = [
   { path: '**', component: InvalidRoutePage },
 ];
 
+const Pages = [HomePage, DashboardPage, LoginPage, InvalidRoutePage]
+
+const Components = [ BoardComponent ];
+
 @NgModule({
-  declarations: [HomePage, DashboardPage, LoginPage, InvalidRoutePage],
+  declarations: [ ...Components , ...Pages],
   imports: [BrowserModule, CommonModule, RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })

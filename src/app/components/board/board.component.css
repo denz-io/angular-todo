@@ -1,0 +1,33 @@
+.board-main-container {
+    display: flex;
+    flex-direction: row;
+    background: #FFFFFF;
+    padding: 40px;
+    min-height: 500px;
+    margin-top: 20px;
+}
+
+.board-main-container div {
+    margin-left: auto;
+    margin-right: auto;
+    height: max-height;
+}
+
+.board-column {
+    border: 1px #F2F2F2 solid; 
+    padding: 10px;
+    width: 20%;
+    background: #F2F2F2;
+}
+
+.board-column-item {
+    border: 1px #000000 solid; 
+    opacity: 1;
+    color: #000000;
+    text-align: left;
+    font-size: 15px;
+    min-height: 50px;
+    padding: 10px;
+    background: #FFFFFF;
+    margin-bottom: 10px;
+}
